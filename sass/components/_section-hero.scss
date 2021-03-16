@@ -1,6 +1,13 @@
 .section-hero {
+  padding: 0px;
+}
+
+.section-hero__thumb {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
   background-color: #c4c4c4;
   background-image: linear-gradient(
       to right,
