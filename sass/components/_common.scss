@@ -1,0 +1,32 @@
+body {
+  font-family: var(--main-font-name), var(--main-font-family);
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*:focus {
+  outline-width: 1px;
+  outline-style: dotted;
+  outline-color: var(--accent-color);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+

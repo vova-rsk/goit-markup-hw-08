@@ -1,0 +1,41 @@
+
+.section-case__title {
+  margin-top: 0;  
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section-case__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-case__item {
+  position: relative;
+}
+
+.section-case__description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--current-txt-color);
+  background: rgba(47, 48, 58, 0.8);
+}
