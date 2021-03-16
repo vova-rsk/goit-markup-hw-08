@@ -180,7 +180,26 @@
   }
 }
 
-.modal-form__checkbox-container {
+// .modal-form__checkbox-container {
+//   margin-top: 20px;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.714;
+//   letter-spacing: 0.03em;
+//   color: var(--secondary-txt-color);
+//   text-align: center;
+// }
+
+.modal-form__checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
   margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
@@ -226,13 +245,4 @@
   }
 }
 
-.modal-form__checkbox-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
+

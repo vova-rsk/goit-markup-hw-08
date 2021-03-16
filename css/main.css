@@ -1053,7 +1053,21 @@ img {
   border-color: var(--accent-color);
 }
 
-.modal-form__checkbox-container {
+.modal-form__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
@@ -1099,23 +1113,6 @@ img {
 
 .modal-form__checkbox-input:checked + .modal-form__checkbox-icon .checkbox-icon__source {
   display: block;
-}
-
-.modal-form__checkbox-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 /* Невидимость */
