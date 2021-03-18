@@ -1,9 +1,17 @@
 .social-networks {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: center;
+
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.social-networks__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
 }
 
 .social-networks__icon {
@@ -19,4 +27,3 @@
   border: none;
   border-radius: 50%;
 }
-
