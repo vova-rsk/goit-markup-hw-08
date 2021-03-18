@@ -78,10 +78,18 @@ img {
 .logo {
   font-family: var(--secondary-font-name), var(--secondary-font-family);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .logo__studio--black {
@@ -255,13 +263,71 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-.page-footer__logo {
-  display: inline-block;
-  margin-bottom: 20px;
+.page-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .sign-container--mobile {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .join-offer--mobile {
+    margin-top: 60px;
+  }
 }
 
 .address-container {
-  margin-right: 83px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .address-container {
+    margin-right: 85px;
+    text-align: start;
+  }
+}
+
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .address {
@@ -269,17 +335,38 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
-  color: #fff;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--current-txt-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: start;
+  }
+}
+
+.address__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .address__item {
-  margin-top: 9px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address__item {
+    margin-top: 9px;
+  }
 }
 
 .address__link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
   color: var(--third-txt-color);
   text-decoration: none;
   -webkit-transition: color var(--delay) var(--time-function);
@@ -290,10 +377,10 @@ img {
   color: var(--accent-color);
 }
 
-.join-offer {
-  width: 206px;
-  max-height: 80px;
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .join-offer {
+    margin-right: 93px;
+  }
 }
 
 .join-offer__title {
@@ -303,8 +390,15 @@ img {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--current-txt-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .join-offer__title {
+    text-align: start;
+  }
 }
 
 .social-networks__link--join-offer {
@@ -322,21 +416,10 @@ img {
   outline: none;
 }
 
-.page-footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.address__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media screen and (max-width: 1199px) {
+  .sign-container {
+    width: 100%;
+  }
 }
 
 .sign-container__title {
@@ -346,20 +429,46 @@ img {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--current-txt-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-container__title {
+    text-align: start;
+  }
 }
 
 .sign-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .sign-form__email {
   padding-left: 16px;
   padding-right: 16px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -373,6 +482,18 @@ img {
   border-radius: 4px;
   -webkit-transition: border-color var(--delay) var(--time-function);
   transition: border-color var(--delay) var(--time-function);
+}
+
+@media screen and (min-width: 480px) {
+  .sign-form__email {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-form__email {
+    width: 358px;
+  }
 }
 
 .sign-form__email::-webkit-input-placeholder {
@@ -396,16 +517,16 @@ img {
 }
 
 .sign-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 12px;
+  margin-top: 20px;
   padding: 0;
   width: 200px;
   height: 50px;
@@ -422,6 +543,13 @@ img {
   transition: -webkit-box-shadow var(--delay) var(--time-function);
   transition: box-shadow var(--delay) var(--time-function);
   transition: box-shadow var(--delay) var(--time-function), -webkit-box-shadow var(--delay) var(--time-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-button {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 
 .sign-button:hover {
@@ -484,7 +612,7 @@ img {
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--current-txt-color);
   text-align: center;
@@ -611,7 +739,8 @@ img {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
