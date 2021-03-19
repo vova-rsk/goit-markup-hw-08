@@ -89,13 +89,15 @@
   list-style: none;
 }
 
-.communication__item:not(:first-child) {
-  @media screen and (min-width: 768px) {
-    margin-top: 10px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-top: 0;
-    margin-left: 30px;
+.communication__item {
+  &:not(:first-child) {
+    @media screen and (min-width: 768px) {
+      margin-top: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-left: 30px;
+    }
   }
 }
 
