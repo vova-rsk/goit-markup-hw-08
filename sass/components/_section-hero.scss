@@ -2,33 +2,13 @@
   padding: 0px;
 }
 
-// .section-hero__thumb {
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding: 118px 0;
-//   background-color: #c4c4c4;
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url('../images/img-bg-hero.jpg');
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-
-//   @media screen and (min-width: 1200px) {
-//     padding: 200px 0;
-//     max-width: 1600px;
-//   }
-// }
-
 .section-hero__thumb {
   width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
+  background-color: #c4c4c4;
 
   @media screen and (max-width: 386px) {
     padding: 97px 0;
@@ -38,67 +18,17 @@
     padding: 76px 0;
   }
 
-  background-color: #c4c4c4;
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/img-bg-hero-480x400@2x.jpg');
-  }
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/img-bg-hero-480x400.jpg');
+  @include backGroundImage2x('../images/img-bg-hero-480x400@2x.jpg');
+  @include backGroundImage1x('../images/img-bg-hero-480x400.jpg');
 
   @media screen and (min-width: 480px) {
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url('../images/img-bg-hero-768x400@2x.jpg');
-    }
-
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/img-bg-hero-768x400.jpg');
+    @include backGroundImage2x('../images/img-bg-hero-768x400@2x.jpg');
+    @include backGroundImage1x('../images/img-bg-hero-768x400.jpg');
   }
 
   @media screen and (min-width: 768px) {
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url('../images/img-bg-hero-1600x600@2x.jpg');
-    }
-
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/img-bg-hero-1600x600.jpg');
+    @include backGroundImage2x('../images/img-bg-hero-1600x600@2x.jpg');
+    @include backGroundImage1x('../images/img-bg-hero-1600x600.jpg');
   }
 
   @media screen and (min-width: 1200px) {
@@ -128,7 +58,6 @@
   }
 }
 
-/*ПЕРЕКИНУТЬ ТЕНЬ НА HOVER И FOCUS*/
 .section-hero__button {
   display: block;
   margin-left: auto;
@@ -144,6 +73,11 @@
   border: none;
   border-radius: 4px;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  transition: box-shadow var(--delay) var(--time-function);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }

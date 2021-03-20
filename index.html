@@ -159,7 +159,16 @@
           <ul class="section-case__list">
             <li class="section-case__item">
               <div class="thumb">
-                <img src="images/programming.jpg" alt="верстка" width="370" />
+                <img
+                  srcset="
+                    ./images/programming.jpg    1x,
+                    ./images/programming@2x.jpg 2x
+                  "
+                  src="./images/programming.jpg"
+                  alt="верстка"
+                  width="370"
+                  height="294"
+                />
               </div>
 
               <h3 class="section-case__description">Десктопные приложения</h3>
@@ -167,7 +176,16 @@
 
             <li class="section-case__item">
               <div class="thumb">
-                <img src="images/interface.jpg" alt="адаптация" width="370" />
+                <img
+                  srcset="
+                    ./images/interface.jpg    1x,
+                    ./images/interface@2x.jpg 2x
+                  "
+                  src="./images/interface.jpg"
+                  alt="адаптация"
+                  width="370"
+                  height="294"
+                />
               </div>
 
               <h3 class="section-case__description">Мобильные приложения</h3>
@@ -175,7 +193,13 @@
 
             <li class="section-case__item">
               <div class="thumb">
-                <img src="images/design.jpg" alt="дизайн" width="370" />
+                <img
+                  srcset="./images/design.jpg 1x, ./images/design@2x.jpg 2x"
+                  src="./images/design.jpg"
+                  alt="дизайн"
+                  width="370"
+                  height="294"
+                />
               </div>
 
               <h3 class="section-case__description">Дизайнерские решения</h3>
@@ -192,9 +216,14 @@
               <div class="personal-cards__thumb">
                 <img
                   class="personal-cards__photo"
-                  src="images/avatar-igordemyanenko.jpg"
-                  alt="ава Ігорь Демьяненко"
-                  width="270"
+                  srcset="
+                    ./images/avatar-igordemyanenko.jpg    1x,
+                    ./images/avatar-igordemyanenko@2x.jpg 2x
+                  "
+                  src="./images/avatar-igordemyanenko.jpg"
+                  alt="фото Ігорь Демьяненко"
+                  width="100%"
+                  height="100%"
                 />
               </div>
               <div class="personal-cards__info">
@@ -256,9 +285,15 @@
             <li class="personal-cards__item">
               <div class="thumb">
                 <img
-                  src="images/avatar-olgarepina.jpg"
-                  alt="ава Ольга Репина"
-                  width="270"
+                  class="personal-cards__photo"
+                  srcset="
+                    ./images/avatar-olgarepina.jpg    1x,
+                    ./images/avatar-olgarepina@2x.jpg 2x
+                  "
+                  src="./images/avatar-olgarepina.jpg"
+                  alt="фото Ольга Репина"
+                  width="100%"
+                  height="100%"
                 />
               </div>
               <div class="personal-cards__info">
@@ -320,9 +355,15 @@
             <li class="personal-cards__item">
               <div class="thumb">
                 <img
-                  src="images/avatar-nikolaytarasov.jpg"
-                  alt="ава Николай Тарасов"
-                  width="270"
+                  class="personal-cards__photo"
+                  srcset="
+                    ./images/avatar-nikolaytarasov.jpg    1x,
+                    ./images/avatar-nikolaytarasov@2x.jpg 2x
+                  "
+                  src="./images/avatar-nikolaytarasov.jpg"
+                  alt="фото Николай Тарасов"
+                  width="100%"
+                  height="100%"
                 />
               </div>
               <div class="personal-cards__info">
@@ -384,9 +425,15 @@
             <li class="personal-cards__item">
               <div class="thumb">
                 <img
-                  src="images/avatar-mihailermakov.jpg"
-                  alt="ава Михаил Ермаков"
-                  width="270"
+                  class="personal-cards__photo"
+                  srcset="
+                    ./images/avatar-mihailermakov.jpg    1x,
+                    ./images/avatar-mihailermakov@2x.jpg 2x
+                  "
+                  src="./images/avatar-mihailermakov.jpg"
+                  alt="фото Михаил Ермаков"
+                  width="100%"
+                  height="100%"
                 />
               </div>
               <div class="personal-cards__info">
@@ -633,12 +680,13 @@
       <div class="modal">
         <button
           class="close-button"
+          0
           type="button"
           aria-label="Закрытие модального окна"
           data-modal-close
         >
           <svg class="close-button__icon" width="18" height="18">
-            <use href="./images/icons.svg#btn-close"></use>
+            <use href="./images/icons.svg#icon-close_18px"></use>
           </svg>
         </button>
         <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>

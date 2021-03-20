@@ -1,4 +1,6 @@
 @import './utils/variables';
+@import './utils/mixins';
+@import './utils/utilites';
 @import './components/common';
 @import './components/logo';
 @import './components/social-networks';
@@ -11,4 +13,3 @@
 @import './components/section-clients';
 @import './components/section-portfolio';
 @import './components/modal';
-@import './utils/utilites';
