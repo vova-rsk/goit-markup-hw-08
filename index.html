@@ -24,29 +24,45 @@
         <a class="logo page-header__logo" id="logo" href="#logo"
           >Web<span class="logo__studio logo__studio--black">Studio</span></a
         >
+        <button
+          class="openMenu-button page-header__openMenu-button js-open-menu"
+        >
+          <svg class="openMenu-button__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px" />
+          </svg>
+        </button>
         <div class="navigation__menu">
           <nav class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item">
+            <ul class="navigation__list navigation__list--notMobile">
+              <li class="navigation__item navigation__item--notMobile">
                 <a
-                  class="navigation__link navigation__link--current"
+                  class="navigation__link navigation__link--notMobile navigation__link--current"
                   href="./index.html"
                   >Студия</a
                 >
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="./portfolio.html"
+              <li class="navigation__item navigation__item--notMobile">
+                <a
+                  class="navigation__link navigation__link--notMobile"
+                  href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#contacts">Контакты</a>
+              <li class="navigation__item navigation__item--notMobile">
+                <a
+                  class="navigation__link navigation__link--notMobile"
+                  href="#contacts"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </nav>
-          <ul class="communication">
-            <li class="communication__item">
-              <a class="communication__link" href="mailto:info@devstudio.com">
+          <ul class="communication communication--notMobile">
+            <li class="communication__item communication__item--notMobile">
+              <a
+                class="communication__link communication__link--notMobile"
+                href="mailto:info@devstudio.com"
+              >
                 <svg
                   class="communication__icon communication__icon--mail"
                   width="16"
@@ -57,8 +73,11 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="communication__item">
-              <a class="communication__link" href="tel:+380961111111">
+            <li class="communication__item communication__item--notMobile">
+              <a
+                class="communication__link communication__link--notMobile"
+                href="tel:+380961111111"
+              >
                 <svg
                   class="communication__icon communication__icon--smartphone"
                   width="10"
@@ -765,6 +784,90 @@
       </div>
     </div>
 
+    <div class="mobile-menu js-menu-container">
+      <button
+        class="closeMenu-button mobile-menu__closeMenu-button js-close-menu"
+      >
+        <svg class="closeMenu-button__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px" />
+        </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list--mobile-menu">
+          <li class="navigation__item navigation__item--mobile-menu">
+            <a
+              class="navigation__link navigation__link--mobile-menu"
+              href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li class="navigation__item navigation__item--mobile-menu">
+            <a
+              class="navigation__link navigation__link--mobile-menu"
+              href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="navigation__item navigation__item--mobile-menu">
+            <a
+              class="navigation__link navigation__link--mobile-menu"
+              href="#contacts"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="communication communication--mobile-menu">
+        <li class="communication__item communication__item--mobile-menu">
+          <a
+            class="communication__link communication__link--mobile-menu"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="communication__item communication__item--mobile-menu">
+          <a
+            class="communication__link communication__link--mobile-menu"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="communication__item communication__item--mobile-menu">
+          <ul class="social-networks social-networks--mobile-menu">
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-networks__link--mobile-menu"
+                href=""
+                >Instagram</a
+              >
+            </li>
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-networks__link--mobile-menu"
+                href=""
+                >Twitter</a
+              >
+            </li>
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-networks__link--mobile-menu"
+                href=""
+                >Facebook</a
+              >
+            </li>
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-networks__link--mobile-menu"
+                href=""
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
