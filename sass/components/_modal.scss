@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity var(--delay) var(--time-function);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -36,7 +37,6 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--delay) var(--time-function);
-  overflow-y: scroll;
 }
 
 .backdrop.is-hidden .modal {
