@@ -176,6 +176,7 @@ img {
   transition: -webkit-transform var(--delay) var(--time-function);
   transition: transform var(--delay) var(--time-function);
   transition: transform var(--delay) var(--time-function), -webkit-transform var(--delay) var(--time-function);
+  overflow-x: scroll;
 }
 
 .mobile-menu.is-open {
@@ -669,9 +670,6 @@ img {
 }
 
 .address__link {
-  display: block;
-  margin: 0;
-  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -1321,8 +1319,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .clients__item {
-    -ms-flex-preferred-size: calc((100% - 2 * var(--clients-gap)) / 2);
-        flex-basis: calc((100% - 2 * var(--clients-gap)) / 2);
+    -ms-flex-preferred-size: calc((100% - 3 * var(--clients-gap)) / 3);
+        flex-basis: calc((100% - 3 * var(--clients-gap)) / 3);
   }
 }
 

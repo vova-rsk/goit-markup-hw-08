@@ -11,6 +11,7 @@
   background-color: var(--main-bg-color);
   transform: translateX(100%);
   transition: transform var(--delay) var(--time-function);
+  overflow-x: scroll;
 }
 
 .mobile-menu.is-open {
@@ -114,6 +115,11 @@
   color: currentcolor;
   text-decoration: none;
 }
+
+// .social-networks--mobile-menu {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
 .social-networks__item--mobile-menu {
   &:not(:first-child) {
