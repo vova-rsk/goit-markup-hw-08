@@ -176,7 +176,6 @@ img {
   transition: -webkit-transform var(--delay) var(--time-function);
   transition: transform var(--delay) var(--time-function);
   transition: transform var(--delay) var(--time-function), -webkit-transform var(--delay) var(--time-function);
-  overflow-x: scroll;
 }
 
 .mobile-menu.is-open {
@@ -300,6 +299,17 @@ img {
 .communication__link--mobile-menu {
   color: currentcolor;
   text-decoration: none;
+}
+
+.social-networks--mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .social-networks__item--mobile-menu:not(:first-child) {
